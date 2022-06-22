@@ -4,35 +4,51 @@ body {
 }
 
 #title {
-	width: 100vw;
-	height: 15vh;
 	color: #1E88A8;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 72px;
 }
 
-#patientContainer {
+#option-area {
+	height: auto;
+}
+
+#container {
 	background-color: white;
 	border-radius: 10px;
-	position: relative;
-	left: 12.5%;
-	width: 75%;
 	height: auto;
 	padding: 10px;
 	border: #58B2DC 3px solid;
 }
 
-#button {
-    position: absolute;
-	top: 1vh;
-	left: 8vh;
-	color: black;
-    background-color: red;
-	font-size: 32px;
+#nothing {
+	color: #6699A1;
+	display: flex;
+	justify-content: center;
 }
 
-.patient {
-	font-size: 32px;
+.button-text {
+	color:  black;
+	text-decoration:none;
+	word-wrap: break-all;
+	display: flex;
+}
+
+.leveled {
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+.bootstrap-select {
+	width: 15vw !important;
+}
+
+@media (max-width: 767px) {
+
+	.bootstrap-select {
+		width: 20vw !important;
+	}
+
+	#option-area .bootstrap-select {
+		width: 75vw  !important;
+	}
+
 }
